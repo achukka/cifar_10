@@ -1,0 +1,14 @@
+### NOTES
+1. Dropout acts as a regularization method, but too much drop out does not help the network.
+2. The percentage dropout affects the rate of convergence.
+3. Gradient methods decide the time for convergence, through my epxeriments I found that 
+   'SGD' converges faster than 'AdaDelta' but the latter has higher accuracy on test set.
+4. You've too see that you do not over shoot the fully connected layer i.e Number of neurons in
+   the FC layer is equal to the output dimensions of Conv Layer. Orherwise the method is worser than
+   random guesses.
+5. In general increasing the number of layers should never decrease the accuracy, 
+   unless you screw up things in the early layers or there is nothing more for the method to learn.
+6. Most of the existing networks achieve good accuracies in less than 20-30 epochs, 
+   with better gradient methods this might decrease (Finger Crossed !!)
+7. Read about 'Convex Otpmization methods and Gradient Descent Methods' to get a better idea 
+   on how to improve neural networks.
